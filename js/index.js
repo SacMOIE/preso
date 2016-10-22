@@ -17,15 +17,19 @@ var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1mxrXQbNi9d
 		if(gsheetClass.outerHTML) { // if outerHTML is supported
 			for (var i=0; i<data.length; i++) {
 				str += "<section  data-background-image='" + data[i].bg + "'>";
-				str += "<h1>" + data[i].Applicant + "</h1>";
-				str += "<span>by " + data[i].Grant + "</span>";
+				str += "<h1>" + data[i].Organization + "</h1>";
+				str += "<h2>" + data[i].Applicant + "</h2>";
+				str += "<p>" + data[i].Description + "</p>";
+				
+				str += "<h3>Proposed Grant: " + data[i].Grant + "</h3>";
 				str += "</section>";				
 			}
 			gsheetClass.outerHTML=str; // it's simple replacement of whole element with contents of str var
-			Reveal.sync();
+			
 		}
 	}
 
-Reveal.initialize({
-				history: true
-			});
+	Reveal.initialize({
+		history: true
+				});
+	Reveal.sync();
