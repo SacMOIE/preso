@@ -154,7 +154,7 @@
 			parallaxBackgroundVertical: null,
 
 			// Number of slides away from the current that are visible
-			viewDistance: 3,
+			viewDistance: 1,
 
 			// Script dependencies to load
 			dependencies: []
@@ -165,7 +165,7 @@
 		loaded = false,
 
 		// Flags if the overview mode is currently active
-		overview = false,
+		overview = true,
 
 		// Holds the dimensions of our overview slides, including margins
 		overviewSlideWidth = null,
@@ -283,7 +283,7 @@
 		dom.slides = document.querySelector( '.reveal .slides' );
 
 		// Force a layout when the whole page, incl fonts, has loaded
-		window.addEventListener( 'load', layout, false );
+		window.addEventListener( 'load', layout, true );
 
 		var query = Reveal.getQueryHash();
 

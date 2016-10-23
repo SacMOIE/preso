@@ -26,27 +26,26 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
+				<section class="present">Let's go, maybe later</section>
 				<div class="gsheet"></div>
-				<section>Slide 2</section>
 			</div>
 		</div>
 		<script src="js/index.js"></script>
 
-		<script src="lib/js/head.min.js"></script>
+		<!--<script src="lib/js/head.min.js"></script>-->
 		<script src="js/reveal.js"></script>
 
 		<script>
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				history: true,
+				history: false,
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: 'plugin/notes/notes.js', async: false },
+					{ src: 'plugin/highlight/highlight.js', async: false, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
 			});
 		</script>
