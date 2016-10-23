@@ -17,11 +17,12 @@ var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1mxrXQbNi9d
 		if(gsheetClass.outerHTML) { // if outerHTML is supported
 			for (var i=0; i<data.length; i++) {
 				str += "<section  class='future' data-background-image='http://abhinemani.com/preso/img/"+data[i].bg+"'>";
+				str += "<h4> // " + data[i].Category + "</h4>";
 				str += "<h1>" + data[i].Organization + "</h1>";
-				str += "<h3>" + data[i].Applicant + "</h3>";
+				str += "<blockquote>" + data[i].Quote + "</blockquote>";
 				str += "<p>" + data[i].Description + "</p>";
+				str += "<h3>" + data[i].Applicant + " | " + data[i].Grant + "</h3>";
 				
-				str += "<h3>" + data[i].Grant + "</h3>";
 				str += "</section>";				
 			}
 			gsheetClass.outerHTML=str; // it's simple replacement of whole element with contents of str var

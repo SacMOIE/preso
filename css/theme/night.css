@@ -57,7 +57,10 @@ body {
   font-size: 1.2em; }
 
 .reveal h4 {
-  font-size: 1em; }
+  font-size: 1em;
+  text-transform: uppercase;
+  opacity: .7;
+ }
 
 .reveal h1 {
   text-shadow: none; }
