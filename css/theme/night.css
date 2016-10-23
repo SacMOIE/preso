@@ -216,6 +216,17 @@ body {
   color: #f3d7ac;
   text-shadow: none;
   border: none; }
+  
+.reveal a i {
+	  color: white;}
+	  
+.reveal h1 a {
+	color: white;
+}	
+
+.reveal a h1:hover,.reveal a i:hover;{
+	opacity: .3;
+}	  
 
 .reveal .roll span:after {
   color: #fff;
