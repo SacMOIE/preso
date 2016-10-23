@@ -1636,7 +1636,7 @@ body {
  *********************************************/
   
 .reveal .backgrounds {
-	opacity: .4;
-	filter: sepia(.7);
+	opacity: .7;
+	filter: sepia(.4);
 }
   
