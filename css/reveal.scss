@@ -848,8 +848,9 @@ body {
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		opacity: 0;
+		opacity: .5;
 		visibility: hidden;
+		filter: blur (2px);
 
 		background-color: rgba( 0, 0, 0, 0 );
 		background-position: 50% 50%;
@@ -864,7 +865,7 @@ body {
 	}
 
 	.reveal .slide-background.present {
-		opacity: 1;
+		opacity: .5;
 		visibility: visible;
 	}
 
@@ -1399,4 +1400,8 @@ body {
 
 .zoomed .reveal .roll span:after {
 	visibility: hidden;
+}
+
+.reveal .slides {
+	background
 }

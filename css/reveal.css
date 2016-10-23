@@ -325,7 +325,7 @@ body {
   margin: auto;
   overflow: visible;
   z-index: 1;
-  text-align: center;
+  text-align: left;
   -webkit-perspective: 600px;
           perspective: 600px;
   -webkit-perspective-origin: 50% 40%;
@@ -831,7 +831,8 @@ body {
   display: block; }
 
 .reveal .slide-background.present {
-  opacity: 1;
+  opacity: .6;
+  filter: blur(1px);
   visibility: visible; }
 
 .print-pdf .reveal .slide-background {
@@ -1323,3 +1324,9 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+  
+  
+ .reveal .slide-backgound, .reveal .slide-backgound:present {
+	 opacity: .4;
+  	
+  }
