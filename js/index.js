@@ -16,7 +16,7 @@ var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1mxrXQbNi9d
 		var gsheetClass = document.getElementsByClassName(target_gsheet_class_once)[0];
 		if(gsheetClass.outerHTML) { // if outerHTML is supported
 			for (var i=0; i<data.length; i++) {
-				str += "<section  data-background-image='" + data[i].bg + "'>";
+				str += "<section  data-background-image='http://abhinemani.com/preso/img/"+data[i].bg+"'>";
 				str += "<h1>" + data[i].Organization + "</h1>";
 				str += "<h2>" + data[i].Applicant + "</h2>";
 				str += "<p>" + data[i].Description + "</p>";
@@ -25,11 +25,5 @@ var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1mxrXQbNi9d
 				str += "</section>";				
 			}
 			gsheetClass.outerHTML=str; // it's simple replacement of whole element with contents of str var
-			
 		}
 	}
-
-	Reveal.initialize({
-		history: true
-				});
-	Reveal.sync();
