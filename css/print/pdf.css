@@ -12,7 +12,7 @@
 body {
 	margin: 0 auto !important;
 	border: 0;
-	padding: 0;
+	padding: 50px;
 	float: none !important;
 	overflow: visible;
 }
@@ -127,7 +127,7 @@ ul, ol, div, p {
 
 /* Slide backgrounds are placed inside of their slide when exporting to PDF */
 .reveal section .slide-background {
-	display: block !important;
+	display: none !important;
 	position: absolute;
 	top: 0;
 	left: 0;
